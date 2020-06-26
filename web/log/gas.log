@@ -1,0 +1,2754 @@
+[2020-05-26 23:51:39 -0500] [13061] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:4433']
+  backlog: 2048
+  workers: 2
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/gas/web
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/gas/web/log/gas.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: gas:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f89e239e1e0>
+  on_reload: <function OnReload.on_reload at 0x7f89e239e2f0>
+  when_ready: <function WhenReady.when_ready at 0x7f89e239e400>
+  pre_fork: <function Prefork.pre_fork at 0x7f89e239e510>
+  post_fork: <function Postfork.post_fork at 0x7f89e239e620>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f89e239e730>
+  worker_int: <function WorkerInt.worker_int at 0x7f89e239e840>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f89e239e950>
+  pre_exec: <function PreExec.pre_exec at 0x7f89e239ea60>
+  pre_request: <function PreRequest.pre_request at 0x7f89e239eb70>
+  post_request: <function PostRequest.post_request at 0x7f89e239ebf8>
+  child_exit: <function ChildExit.child_exit at 0x7f89e239ed08>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f89e239ee18>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f89e239ef28>
+  on_exit: <function OnExit.on_exit at 0x7f89e23270d0>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: /usr/local/src/ssl/ucmpcs.org.key
+  certfile: /usr/local/src/ssl/ucmpcs.org.crt
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-05-26 23:51:39 -0500] [13061] [INFO] Starting gunicorn 20.0.4
+[2020-05-26 23:51:39 -0500] [13061] [DEBUG] Arbiter booted
+[2020-05-26 23:51:39 -0500] [13061] [INFO] Listening at: https://0.0.0.0:4433 (13061)
+[2020-05-26 23:51:39 -0500] [13061] [INFO] Using worker: sync
+[2020-05-26 23:51:39 -0500] [13064] [INFO] Booting worker with pid: 13064
+[2020-05-26 23:51:39 -0500] [13066] [INFO] Booting worker with pid: 13066
+[2020-05-26 23:51:39 -0500] [13061] [DEBUG] 2 workers
+[2020-05-26 23:51:56 -0500] [13064] [DEBUG] Error processing SSL request.
+[2020-05-26 23:51:56 -0500] [13064] [DEBUG] Invalid request from ip=12.26.17.91: [SSL: HTTP_REQUEST] http request (_ssl.c:2309)
+[2020-05-26 23:51:56 -0500] [13064] [DEBUG] Failed to send error message.
+[2020-05-26 23:51:56 -0500] [13064] [DEBUG] Error processing SSL request.
+[2020-05-26 23:51:56 -0500] [13064] [DEBUG] Invalid request from ip=12.26.17.91: [SSL: HTTP_REQUEST] http request (_ssl.c:2309)
+[2020-05-26 23:51:56 -0500] [13064] [DEBUG] Failed to send error message.
+[2020-05-26 23:51:56 -0500] [13066] [DEBUG] Error processing SSL request.
+[2020-05-26 23:51:56 -0500] [13066] [DEBUG] Invalid request from ip=12.26.17.91: [SSL: HTTP_REQUEST] http request (_ssl.c:2309)
+[2020-05-26 23:51:56 -0500] [13066] [DEBUG] Failed to send error message.
+[2020-05-26 23:51:56 -0500] [13064] [DEBUG] Error processing SSL request.
+[2020-05-26 23:51:56 -0500] [13064] [DEBUG] Invalid request from ip=12.26.17.91: [SSL: HTTP_REQUEST] http request (_ssl.c:2309)
+[2020-05-26 23:51:56 -0500] [13064] [DEBUG] Failed to send error message.
+[2020-05-26 23:52:06 -0500] [13066] [DEBUG] GET /
+[2020-05-26 23:52:06 -0500] [13064] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-05-26 23:52:06 -0500] [13066] [DEBUG] GET /static/css/style.css
+[2020-05-26 23:52:06 -0500] [13064] [DEBUG] GET /static/js/jquery.min.js
+[2020-05-26 23:52:06 -0500] [13066] [DEBUG] GET /static/js/bootstrap.min.js
+[2020-05-26 23:52:06 -0500] [13064] [DEBUG] GET /static/js/parsley.min.js
+[2020-05-26 23:52:07 -0500] [13064] [DEBUG] GET /static/img/home-bg.jpg
+[2020-05-26 23:52:08 -0500] [13066] [DEBUG] GET /static/img/favicon.ico
+[2020-05-26 23:53:41 -0500] [13061] [INFO] Handling signal: int
+[2020-05-26 23:53:41 -0500] [13066] [INFO] Worker exiting (pid: 13066)
+2020-05-26 23:53:41,998 INFO: Worker exiting (pid: 13066) 
+[2020-05-26 23:53:41 -0500] [13064] [INFO] Worker exiting (pid: 13064)
+2020-05-26 23:53:41,999 INFO: Worker exiting (pid: 13064) 
+[2020-05-26 23:53:42 -0500] [13061] [INFO] Shutting down: Master
+[2020-05-27 10:56:24 -0500] [14820] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:4433']
+  backlog: 2048
+  workers: 2
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/gas/web
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/gas/web/log/gas.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: gas:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f852cd81e18>
+  on_reload: <function OnReload.on_reload at 0x7f852cd81f28>
+  when_ready: <function WhenReady.when_ready at 0x7f852cd9b0d0>
+  pre_fork: <function Prefork.pre_fork at 0x7f852cd9b1e0>
+  post_fork: <function Postfork.post_fork at 0x7f852cd9b2f0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f852cd9b400>
+  worker_int: <function WorkerInt.worker_int at 0x7f852cd9b510>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f852cd9b620>
+  pre_exec: <function PreExec.pre_exec at 0x7f852cd9b730>
+  pre_request: <function PreRequest.pre_request at 0x7f852cd9b840>
+  post_request: <function PostRequest.post_request at 0x7f852cd9b8c8>
+  child_exit: <function ChildExit.child_exit at 0x7f852cd9b9d8>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f852cd9bae8>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f852cd9bbf8>
+  on_exit: <function OnExit.on_exit at 0x7f852cd9bd08>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: /usr/local/src/ssl/ucmpcs.org.key
+  certfile: /usr/local/src/ssl/ucmpcs.org.crt
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-05-27 10:56:24 -0500] [14820] [INFO] Starting gunicorn 20.0.4
+[2020-05-27 10:56:24 -0500] [14820] [DEBUG] Arbiter booted
+[2020-05-27 10:56:24 -0500] [14820] [INFO] Listening at: https://0.0.0.0:4433 (14820)
+[2020-05-27 10:56:24 -0500] [14820] [INFO] Using worker: sync
+[2020-05-27 10:56:24 -0500] [14823] [INFO] Booting worker with pid: 14823
+[2020-05-27 10:56:24 -0500] [14824] [INFO] Booting worker with pid: 14824
+[2020-05-27 10:56:24 -0500] [14820] [DEBUG] 2 workers
+[2020-05-27 10:56:27 -0500] [14824] [DEBUG] GET /annotate
+[2020-05-27 10:56:27 -0500] [14824] [DEBUG] GET /login
+[2020-05-27 10:56:27 -0500] [14824] [INFO] Login attempted from IP 12.26.17.91
+2020-05-27 10:56:27,878 INFO: Login attempted from IP 12.26.17.91 
+[2020-05-27 10:56:27 -0500] [14824] [DEBUG] GET /authcallback
+[2020-05-27 10:56:57 -0500] [14823] [DEBUG] Closing connection. 
+[2020-05-27 10:57:31 -0500] [14823] [DEBUG] GET /authcallback
+[2020-05-27 10:57:32 -0500] [14823] [DEBUG] GET /profile
+[2020-05-27 10:57:32 -0500] [14823] [DEBUG] GET /annotate
+[2020-05-27 10:57:32 -0500] [14823] [DEBUG] GET /static/css/style.css
+[2020-05-27 10:57:32 -0500] [14823] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-05-27 10:57:33 -0500] [14823] [DEBUG] GET /static/js/bootstrap.min.js
+[2020-05-27 10:57:33 -0500] [14823] [DEBUG] GET /static/js/jquery.min.js
+[2020-05-27 10:57:33 -0500] [14823] [DEBUG] GET /static/js/parsley.min.js
+[2020-05-27 10:57:33 -0500] [14823] [DEBUG] GET /static/img/menu-bg.jpg
+[2020-05-27 10:57:33 -0500] [14823] [DEBUG] GET /static/img/favicon.ico
+[2020-05-27 10:57:59 -0500] [14823] [DEBUG] GET /annotate/job
+[2020-05-27 10:58:01 -0500] [14824] [DEBUG] Closing connection. 
+[2020-05-27 11:10:20 -0500] [14823] [DEBUG] GET /annotate
+[2020-05-27 11:10:23 -0500] [14823] [DEBUG] GET /annotate/job
+[2020-05-27 11:10:23 -0500] [14823] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-05-27 11:10:23 -0500] [14823] [DEBUG] GET /static/css/style.css
+[2020-05-27 11:10:23 -0500] [14823] [DEBUG] GET /static/js/jquery.min.js
+[2020-05-27 11:10:24 -0500] [14823] [DEBUG] GET /static/js/bootstrap.min.js
+[2020-05-27 11:10:24 -0500] [14823] [DEBUG] GET /static/js/parsley.min.js
+[2020-05-27 11:10:24 -0500] [14823] [DEBUG] GET /static/img/menu-bg.jpg
+[2020-05-27 11:10:32 -0500] [14820] [INFO] Handling signal: int
+[2020-05-27 11:10:32 -0500] [14823] [INFO] Worker exiting (pid: 14823)
+2020-05-27 11:10:32,519 INFO: Worker exiting (pid: 14823) 
+[2020-05-27 11:10:32 -0500] [14824] [INFO] Worker exiting (pid: 14824)
+2020-05-27 11:10:32,520 INFO: Worker exiting (pid: 14824) 
+[2020-05-27 11:10:32 -0500] [14820] [INFO] Shutting down: Master
+[2020-05-27 11:10:33 -0500] [14909] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:4433']
+  backlog: 2048
+  workers: 2
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/gas/web
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/gas/web/log/gas.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: gas:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f8d54076e18>
+  on_reload: <function OnReload.on_reload at 0x7f8d54076f28>
+  when_ready: <function WhenReady.when_ready at 0x7f8d540900d0>
+  pre_fork: <function Prefork.pre_fork at 0x7f8d540901e0>
+  post_fork: <function Postfork.post_fork at 0x7f8d540902f0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f8d54090400>
+  worker_int: <function WorkerInt.worker_int at 0x7f8d54090510>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f8d54090620>
+  pre_exec: <function PreExec.pre_exec at 0x7f8d54090730>
+  pre_request: <function PreRequest.pre_request at 0x7f8d54090840>
+  post_request: <function PostRequest.post_request at 0x7f8d540908c8>
+  child_exit: <function ChildExit.child_exit at 0x7f8d540909d8>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f8d54090ae8>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f8d54090bf8>
+  on_exit: <function OnExit.on_exit at 0x7f8d54090d08>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: /usr/local/src/ssl/ucmpcs.org.key
+  certfile: /usr/local/src/ssl/ucmpcs.org.crt
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-05-27 11:10:33 -0500] [14909] [INFO] Starting gunicorn 20.0.4
+[2020-05-27 11:10:33 -0500] [14909] [DEBUG] Arbiter booted
+[2020-05-27 11:10:33 -0500] [14909] [INFO] Listening at: https://0.0.0.0:4433 (14909)
+[2020-05-27 11:10:33 -0500] [14909] [INFO] Using worker: sync
+[2020-05-27 11:10:33 -0500] [14912] [INFO] Booting worker with pid: 14912
+[2020-05-27 11:10:33 -0500] [14913] [INFO] Booting worker with pid: 14913
+[2020-05-27 11:10:33 -0500] [14909] [DEBUG] 2 workers
+[2020-05-27 11:10:37 -0500] [14912] [DEBUG] GET /annotate
+[2020-05-27 11:10:40 -0500] [14912] [DEBUG] GET /annotate/job
+[2020-05-27 11:10:40 -0500] [14912] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-05-27 11:10:40 -0500] [14912] [DEBUG] GET /static/css/style.css
+[2020-05-27 11:10:40 -0500] [14912] [DEBUG] GET /static/js/jquery.min.js
+[2020-05-27 11:10:40 -0500] [14912] [DEBUG] GET /static/js/bootstrap.min.js
+[2020-05-27 11:10:40 -0500] [14912] [DEBUG] GET /static/js/parsley.min.js
+[2020-05-27 11:10:40 -0500] [14912] [DEBUG] GET /static/img/menu-bg.jpg
+[2020-05-27 11:11:10 -0500] [14909] [CRITICAL] WORKER TIMEOUT (pid:14913)
+[2020-05-27 11:11:10 -0500] [14913] [INFO] Worker exiting (pid: 14913)
+2020-05-27 11:11:10,839 INFO: Worker exiting (pid: 14913) 
+[2020-05-27 11:11:10 -0500] [14926] [INFO] Booting worker with pid: 14926
+[2020-05-27 11:22:59 -0500] [14909] [INFO] Handling signal: int
+[2020-05-27 11:22:59 -0500] [14912] [INFO] Worker exiting (pid: 14912)
+2020-05-27 11:22:59,780 INFO: Worker exiting (pid: 14912) 
+[2020-05-27 11:22:59 -0500] [14926] [INFO] Worker exiting (pid: 14926)
+2020-05-27 11:22:59,781 INFO: Worker exiting (pid: 14926) 
+[2020-05-27 11:22:59 -0500] [14909] [INFO] Shutting down: Master
+[2020-05-27 11:23:00 -0500] [14943] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:4433']
+  backlog: 2048
+  workers: 2
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/gas/web
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/gas/web/log/gas.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: gas:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f0e51aa9e18>
+  on_reload: <function OnReload.on_reload at 0x7f0e51aa9f28>
+  when_ready: <function WhenReady.when_ready at 0x7f0e51ac30d0>
+  pre_fork: <function Prefork.pre_fork at 0x7f0e51ac31e0>
+  post_fork: <function Postfork.post_fork at 0x7f0e51ac32f0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f0e51ac3400>
+  worker_int: <function WorkerInt.worker_int at 0x7f0e51ac3510>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f0e51ac3620>
+  pre_exec: <function PreExec.pre_exec at 0x7f0e51ac3730>
+  pre_request: <function PreRequest.pre_request at 0x7f0e51ac3840>
+  post_request: <function PostRequest.post_request at 0x7f0e51ac38c8>
+  child_exit: <function ChildExit.child_exit at 0x7f0e51ac39d8>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f0e51ac3ae8>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f0e51ac3bf8>
+  on_exit: <function OnExit.on_exit at 0x7f0e51ac3d08>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: /usr/local/src/ssl/ucmpcs.org.key
+  certfile: /usr/local/src/ssl/ucmpcs.org.crt
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-05-27 11:23:00 -0500] [14943] [INFO] Starting gunicorn 20.0.4
+[2020-05-27 11:23:00 -0500] [14943] [DEBUG] Arbiter booted
+[2020-05-27 11:23:00 -0500] [14943] [INFO] Listening at: https://0.0.0.0:4433 (14943)
+[2020-05-27 11:23:00 -0500] [14943] [INFO] Using worker: sync
+[2020-05-27 11:23:00 -0500] [14946] [INFO] Booting worker with pid: 14946
+[2020-05-27 11:23:01 -0500] [14948] [INFO] Booting worker with pid: 14948
+[2020-05-27 11:23:01 -0500] [14943] [DEBUG] 2 workers
+[2020-05-27 11:23:05 -0500] [14946] [DEBUG] GET /annotate
+[2020-05-27 11:23:09 -0500] [14948] [DEBUG] GET /annotate/job
+[2020-05-27 11:31:43 -0500] [14943] [INFO] Handling signal: int
+[2020-05-27 11:31:43 -0500] [14946] [INFO] Worker exiting (pid: 14946)
+2020-05-27 11:31:43,851 INFO: Worker exiting (pid: 14946) 
+[2020-05-27 11:31:43 -0500] [14948] [INFO] Worker exiting (pid: 14948)
+2020-05-27 11:31:43,852 INFO: Worker exiting (pid: 14948) 
+[2020-05-27 11:31:44 -0500] [14943] [INFO] Shutting down: Master
+[2020-05-27 11:31:44 -0500] [14974] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:4433']
+  backlog: 2048
+  workers: 2
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/gas/web
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/gas/web/log/gas.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: gas:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7ff2b73a4e18>
+  on_reload: <function OnReload.on_reload at 0x7ff2b73a4f28>
+  when_ready: <function WhenReady.when_ready at 0x7ff2b73be0d0>
+  pre_fork: <function Prefork.pre_fork at 0x7ff2b73be1e0>
+  post_fork: <function Postfork.post_fork at 0x7ff2b73be2f0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7ff2b73be400>
+  worker_int: <function WorkerInt.worker_int at 0x7ff2b73be510>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7ff2b73be620>
+  pre_exec: <function PreExec.pre_exec at 0x7ff2b73be730>
+  pre_request: <function PreRequest.pre_request at 0x7ff2b73be840>
+  post_request: <function PostRequest.post_request at 0x7ff2b73be8c8>
+  child_exit: <function ChildExit.child_exit at 0x7ff2b73be9d8>
+  worker_exit: <function WorkerExit.worker_exit at 0x7ff2b73beae8>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7ff2b73bebf8>
+  on_exit: <function OnExit.on_exit at 0x7ff2b73bed08>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: /usr/local/src/ssl/ucmpcs.org.key
+  certfile: /usr/local/src/ssl/ucmpcs.org.crt
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-05-27 11:31:44 -0500] [14974] [INFO] Starting gunicorn 20.0.4
+[2020-05-27 11:31:44 -0500] [14974] [DEBUG] Arbiter booted
+[2020-05-27 11:31:44 -0500] [14974] [INFO] Listening at: https://0.0.0.0:4433 (14974)
+[2020-05-27 11:31:44 -0500] [14974] [INFO] Using worker: sync
+[2020-05-27 11:31:44 -0500] [14977] [INFO] Booting worker with pid: 14977
+[2020-05-27 11:31:44 -0500] [14978] [INFO] Booting worker with pid: 14978
+[2020-05-27 11:31:44 -0500] [14974] [DEBUG] 2 workers
+[2020-05-27 11:33:41 -0500] [14978] [DEBUG] GET /annotate
+[2020-05-27 11:33:44 -0500] [14978] [DEBUG] GET /annotate/job
+[2020-05-27 11:33:44 -0500] [14978] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-05-27 11:33:46 -0500] [14978] [DEBUG] GET /static/css/style.css
+[2020-05-27 11:33:46 -0500] [14978] [DEBUG] GET /static/js/jquery.min.js
+[2020-05-27 11:33:46 -0500] [14978] [DEBUG] GET /static/js/bootstrap.min.js
+[2020-05-27 11:33:49 -0500] [14978] [DEBUG] GET /static/js/parsley.min.js
+[2020-05-27 11:33:58 -0500] [14978] [DEBUG] GET /static/img/menu-bg.jpg
+[2020-05-27 11:34:00 -0500] [14978] [DEBUG] GET /annotate
+[2020-05-27 11:34:02 -0500] [14978] [DEBUG] GET /annotate/job
+[2020-05-27 11:34:02 -0500] [14978] [DEBUG] GET /static/img/menu-bg.jpg
+[2020-05-27 11:34:06 -0500] [14978] [DEBUG] GET /annotate
+[2020-05-27 11:34:10 -0500] [14978] [DEBUG] GET /annotate/job
+[2020-05-27 11:34:12 -0500] [14978] [DEBUG] GET /static/css/style.css
+[2020-05-27 11:34:12 -0500] [14978] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-05-27 11:34:12 -0500] [14978] [DEBUG] GET /static/js/jquery.min.js
+[2020-05-27 11:34:15 -0500] [14977] [DEBUG] Closing connection. 
+[2020-05-27 11:34:15 -0500] [14978] [DEBUG] GET /static/js/parsley.min.js
+[2020-05-27 11:34:19 -0500] [14977] [DEBUG] GET /static/js/bootstrap.min.js
+[2020-05-27 11:34:22 -0500] [14978] [DEBUG] GET /static/img/menu-bg.jpg
+[2020-05-27 11:35:01 -0500] [14977] [DEBUG] GET /annotate
+[2020-05-27 11:35:04 -0500] [14977] [DEBUG] GET /annotate/job
+[2020-05-27 11:35:04 -0500] [14977] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-05-27 11:35:04 -0500] [14977] [DEBUG] GET /static/css/style.css
+[2020-05-27 11:35:04 -0500] [14977] [DEBUG] GET /static/js/jquery.min.js
+[2020-05-27 11:35:04 -0500] [14977] [DEBUG] GET /static/js/bootstrap.min.js
+[2020-05-27 11:35:04 -0500] [14977] [DEBUG] GET /static/js/parsley.min.js
+[2020-05-27 11:35:07 -0500] [14977] [DEBUG] GET /static/img/menu-bg.jpg
+[2020-05-27 11:35:35 -0500] [14978] [DEBUG] Closing connection. 
+[2020-05-27 17:32:58 -0500] [15532] [INFO] Booting worker with pid: 15532
+[2020-05-27 17:32:58 -0500] [15533] [INFO] Booting worker with pid: 15533
+[2020-05-27 17:32:58 -0500] [14974] [INFO] Handling signal: hup
+[2020-05-27 17:32:58 -0500] [14974] [INFO] Hang up: Master
+[2020-05-27 17:32:58 -0500] [14974] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:4433']
+  backlog: 2048
+  workers: 2
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/gas/web
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/gas/web/log/gas.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: gas:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7ff2b73a4e18>
+  on_reload: <function OnReload.on_reload at 0x7ff2b73a4f28>
+  when_ready: <function WhenReady.when_ready at 0x7ff2b73be0d0>
+  pre_fork: <function Prefork.pre_fork at 0x7ff2b73be1e0>
+  post_fork: <function Postfork.post_fork at 0x7ff2b73be2f0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7ff2b73be400>
+  worker_int: <function WorkerInt.worker_int at 0x7ff2b73be510>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7ff2b73be620>
+  pre_exec: <function PreExec.pre_exec at 0x7ff2b73be730>
+  pre_request: <function PreRequest.pre_request at 0x7ff2b73be840>
+  post_request: <function PostRequest.post_request at 0x7ff2b73be8c8>
+  child_exit: <function ChildExit.child_exit at 0x7ff2b73be9d8>
+  worker_exit: <function WorkerExit.worker_exit at 0x7ff2b73beae8>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7ff2b73bebf8>
+  on_exit: <function OnExit.on_exit at 0x7ff2b73bed08>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: /usr/local/src/ssl/ucmpcs.org.key
+  certfile: /usr/local/src/ssl/ucmpcs.org.crt
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-05-27 17:32:58 -0500] [15536] [INFO] Booting worker with pid: 15536
+[2020-05-27 17:32:58 -0500] [15535] [INFO] Booting worker with pid: 15535
+[2020-05-27 17:33:00 -0500] [15532] [INFO] Worker exiting (pid: 15532)
+2020-05-27 17:33:00,536 INFO: Worker exiting (pid: 15532) 
+[2020-05-27 17:33:00 -0500] [15533] [INFO] Worker exiting (pid: 15533)
+2020-05-27 17:33:00,540 INFO: Worker exiting (pid: 15533) 
+[2020-05-28 12:51:29 -0500] [15535] [DEBUG] GET /annotate
+[2020-05-28 12:51:30 -0500] [15536] [DEBUG] GET /annotate
+[2020-05-28 12:51:31 -0500] [15535] [DEBUG] GET /static/css/style.css
+[2020-05-28 12:51:31 -0500] [15536] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-05-28 12:51:31 -0500] [15535] [DEBUG] GET /static/js/jquery.min.js
+[2020-05-28 12:51:31 -0500] [15536] [DEBUG] GET /static/js/parsley.min.js
+[2020-05-28 12:51:31 -0500] [15535] [DEBUG] GET /static/js/bootstrap.min.js
+[2020-05-28 12:51:31 -0500] [15536] [DEBUG] GET /static/img/menu-bg.jpg
+[2020-05-28 12:52:19 -0500] [17558] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:4433']
+  backlog: 2048
+  workers: 2
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/gas/web
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/gas/web/log/gas.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: gas:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fa94ff4ee18>
+  on_reload: <function OnReload.on_reload at 0x7fa94ff4ef28>
+  when_ready: <function WhenReady.when_ready at 0x7fa94ff680d0>
+  pre_fork: <function Prefork.pre_fork at 0x7fa94ff681e0>
+  post_fork: <function Postfork.post_fork at 0x7fa94ff682f0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fa94ff68400>
+  worker_int: <function WorkerInt.worker_int at 0x7fa94ff68510>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fa94ff68620>
+  pre_exec: <function PreExec.pre_exec at 0x7fa94ff68730>
+  pre_request: <function PreRequest.pre_request at 0x7fa94ff68840>
+  post_request: <function PostRequest.post_request at 0x7fa94ff688c8>
+  child_exit: <function ChildExit.child_exit at 0x7fa94ff689d8>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fa94ff68ae8>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fa94ff68bf8>
+  on_exit: <function OnExit.on_exit at 0x7fa94ff68d08>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: /usr/local/src/ssl/ucmpcs.org.key
+  certfile: /usr/local/src/ssl/ucmpcs.org.crt
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-05-28 12:52:19 -0500] [17558] [INFO] Starting gunicorn 20.0.4
+[2020-05-28 12:52:19 -0500] [17558] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:52:19 -0500] [17558] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:52:19 -0500] [17558] [ERROR] Retrying in 1 second.
+[2020-05-28 12:52:20 -0500] [17558] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:52:20 -0500] [17558] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:52:20 -0500] [17558] [ERROR] Retrying in 1 second.
+[2020-05-28 12:52:21 -0500] [17558] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:52:21 -0500] [17558] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:52:21 -0500] [17558] [ERROR] Retrying in 1 second.
+[2020-05-28 12:52:21 -0500] [15536] [DEBUG] GET /annotate/job
+[2020-05-28 12:52:22 -0500] [17558] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:52:22 -0500] [17558] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:52:22 -0500] [17558] [ERROR] Retrying in 1 second.
+[2020-05-28 12:52:23 -0500] [17558] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:52:23 -0500] [17558] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:52:23 -0500] [17558] [ERROR] Retrying in 1 second.
+[2020-05-28 12:52:24 -0500] [17558] [ERROR] Can't connect to ('0.0.0.0', 4433)
+[2020-05-28 12:52:54 -0500] [17574] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:4433']
+  backlog: 2048
+  workers: 2
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/gas/web
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/gas/web/log/gas.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: gas:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f8d4634ce18>
+  on_reload: <function OnReload.on_reload at 0x7f8d4634cf28>
+  when_ready: <function WhenReady.when_ready at 0x7f8d463660d0>
+  pre_fork: <function Prefork.pre_fork at 0x7f8d463661e0>
+  post_fork: <function Postfork.post_fork at 0x7f8d463662f0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f8d46366400>
+  worker_int: <function WorkerInt.worker_int at 0x7f8d46366510>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f8d46366620>
+  pre_exec: <function PreExec.pre_exec at 0x7f8d46366730>
+  pre_request: <function PreRequest.pre_request at 0x7f8d46366840>
+  post_request: <function PostRequest.post_request at 0x7f8d463668c8>
+  child_exit: <function ChildExit.child_exit at 0x7f8d463669d8>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f8d46366ae8>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f8d46366bf8>
+  on_exit: <function OnExit.on_exit at 0x7f8d46366d08>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: /usr/local/src/ssl/ucmpcs.org.key
+  certfile: /usr/local/src/ssl/ucmpcs.org.crt
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-05-28 12:52:54 -0500] [17574] [INFO] Starting gunicorn 20.0.4
+[2020-05-28 12:52:54 -0500] [17574] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:52:54 -0500] [17574] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:52:54 -0500] [17574] [ERROR] Retrying in 1 second.
+[2020-05-28 12:52:55 -0500] [17574] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:52:55 -0500] [17574] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:52:55 -0500] [17574] [ERROR] Retrying in 1 second.
+[2020-05-28 12:52:56 -0500] [17574] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:52:56 -0500] [17574] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:52:56 -0500] [17574] [ERROR] Retrying in 1 second.
+[2020-05-28 12:52:57 -0500] [17574] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:52:57 -0500] [17574] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:52:57 -0500] [17574] [ERROR] Retrying in 1 second.
+[2020-05-28 12:52:58 -0500] [15536] [DEBUG] GET /annotate
+[2020-05-28 12:52:58 -0500] [17574] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:52:58 -0500] [17574] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:52:58 -0500] [17574] [ERROR] Retrying in 1 second.
+[2020-05-28 12:52:59 -0500] [17574] [ERROR] Can't connect to ('0.0.0.0', 4433)
+[2020-05-28 12:53:01 -0500] [15535] [DEBUG] GET /annotate/job
+[2020-05-28 12:53:01 -0500] [15535] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-05-28 12:53:01 -0500] [15535] [DEBUG] GET /static/css/style.css
+[2020-05-28 12:53:01 -0500] [15535] [DEBUG] GET /static/js/jquery.min.js
+[2020-05-28 12:53:01 -0500] [15535] [DEBUG] GET /static/js/bootstrap.min.js
+[2020-05-28 12:53:01 -0500] [15535] [DEBUG] GET /static/js/parsley.min.js
+[2020-05-28 12:53:01 -0500] [15535] [DEBUG] GET /static/img/menu-bg.jpg
+[2020-05-28 12:53:05 -0500] [17578] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:4433']
+  backlog: 2048
+  workers: 2
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/gas/web
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/gas/web/log/gas.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: gas:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f2b3ad7ce18>
+  on_reload: <function OnReload.on_reload at 0x7f2b3ad7cf28>
+  when_ready: <function WhenReady.when_ready at 0x7f2b3ad960d0>
+  pre_fork: <function Prefork.pre_fork at 0x7f2b3ad961e0>
+  post_fork: <function Postfork.post_fork at 0x7f2b3ad962f0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f2b3ad96400>
+  worker_int: <function WorkerInt.worker_int at 0x7f2b3ad96510>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f2b3ad96620>
+  pre_exec: <function PreExec.pre_exec at 0x7f2b3ad96730>
+  pre_request: <function PreRequest.pre_request at 0x7f2b3ad96840>
+  post_request: <function PostRequest.post_request at 0x7f2b3ad968c8>
+  child_exit: <function ChildExit.child_exit at 0x7f2b3ad969d8>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f2b3ad96ae8>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f2b3ad96bf8>
+  on_exit: <function OnExit.on_exit at 0x7f2b3ad96d08>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: /usr/local/src/ssl/ucmpcs.org.key
+  certfile: /usr/local/src/ssl/ucmpcs.org.crt
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-05-28 12:53:05 -0500] [17578] [INFO] Starting gunicorn 20.0.4
+[2020-05-28 12:53:05 -0500] [17578] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:53:05 -0500] [17578] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:53:05 -0500] [17578] [ERROR] Retrying in 1 second.
+[2020-05-28 12:53:06 -0500] [17578] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:53:06 -0500] [17578] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:53:06 -0500] [17578] [ERROR] Retrying in 1 second.
+[2020-05-28 12:53:07 -0500] [17578] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:53:07 -0500] [17578] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:53:07 -0500] [17578] [ERROR] Retrying in 1 second.
+[2020-05-28 12:53:08 -0500] [17578] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:53:08 -0500] [17578] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:53:08 -0500] [17578] [ERROR] Retrying in 1 second.
+[2020-05-28 12:53:09 -0500] [17578] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:53:09 -0500] [17578] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:53:09 -0500] [17578] [ERROR] Retrying in 1 second.
+[2020-05-28 12:53:10 -0500] [17578] [ERROR] Can't connect to ('0.0.0.0', 4433)
+[2020-05-28 12:53:32 -0500] [14974] [CRITICAL] WORKER TIMEOUT (pid:15536)
+[2020-05-28 12:53:32 -0500] [15536] [INFO] Worker exiting (pid: 15536)
+2020-05-28 12:53:32,067 INFO: Worker exiting (pid: 15536) 
+[2020-05-28 12:53:32 -0500] [17581] [INFO] Booting worker with pid: 17581
+[2020-05-28 12:55:51 -0500] [17589] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:4433']
+  backlog: 2048
+  workers: 2
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/gas/web
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/gas/web/log/gas.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: gas:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f3cdc074e18>
+  on_reload: <function OnReload.on_reload at 0x7f3cdc074f28>
+  when_ready: <function WhenReady.when_ready at 0x7f3cdc08e0d0>
+  pre_fork: <function Prefork.pre_fork at 0x7f3cdc08e1e0>
+  post_fork: <function Postfork.post_fork at 0x7f3cdc08e2f0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f3cdc08e400>
+  worker_int: <function WorkerInt.worker_int at 0x7f3cdc08e510>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f3cdc08e620>
+  pre_exec: <function PreExec.pre_exec at 0x7f3cdc08e730>
+  pre_request: <function PreRequest.pre_request at 0x7f3cdc08e840>
+  post_request: <function PostRequest.post_request at 0x7f3cdc08e8c8>
+  child_exit: <function ChildExit.child_exit at 0x7f3cdc08e9d8>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f3cdc08eae8>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f3cdc08ebf8>
+  on_exit: <function OnExit.on_exit at 0x7f3cdc08ed08>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: /usr/local/src/ssl/ucmpcs.org.key
+  certfile: /usr/local/src/ssl/ucmpcs.org.crt
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-05-28 12:55:51 -0500] [17589] [INFO] Starting gunicorn 20.0.4
+[2020-05-28 12:55:51 -0500] [17589] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:55:51 -0500] [17589] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:55:51 -0500] [17589] [ERROR] Retrying in 1 second.
+[2020-05-28 12:55:52 -0500] [17589] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:55:52 -0500] [17589] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:55:52 -0500] [17589] [ERROR] Retrying in 1 second.
+[2020-05-28 12:55:53 -0500] [17589] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:55:53 -0500] [17589] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:55:53 -0500] [17589] [ERROR] Retrying in 1 second.
+[2020-05-28 12:55:54 -0500] [17589] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:55:54 -0500] [17589] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:55:54 -0500] [17589] [ERROR] Retrying in 1 second.
+[2020-05-28 12:55:54 -0500] [17581] [DEBUG] GET /annotate
+[2020-05-28 12:55:55 -0500] [17589] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:55:55 -0500] [17589] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:55:55 -0500] [17589] [ERROR] Retrying in 1 second.
+[2020-05-28 12:55:56 -0500] [17589] [ERROR] Can't connect to ('0.0.0.0', 4433)
+[2020-05-28 12:55:58 -0500] [15535] [DEBUG] GET /annotate/job
+[2020-05-28 12:55:58 -0500] [15535] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-05-28 12:55:58 -0500] [15535] [DEBUG] GET /static/css/style.css
+[2020-05-28 12:55:58 -0500] [15535] [DEBUG] GET /static/js/parsley.min.js
+[2020-05-28 12:55:58 -0500] [15535] [DEBUG] GET /static/js/jquery.min.js
+[2020-05-28 12:55:58 -0500] [15535] [DEBUG] GET /static/js/bootstrap.min.js
+[2020-05-28 12:55:58 -0500] [15535] [DEBUG] GET /static/img/menu-bg.jpg
+[2020-05-28 12:56:09 -0500] [17605] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:4433']
+  backlog: 2048
+  workers: 2
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/gas/web
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/gas/web/log/gas.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: gas:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f718e84ae18>
+  on_reload: <function OnReload.on_reload at 0x7f718e84af28>
+  when_ready: <function WhenReady.when_ready at 0x7f718e8640d0>
+  pre_fork: <function Prefork.pre_fork at 0x7f718e8641e0>
+  post_fork: <function Postfork.post_fork at 0x7f718e8642f0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f718e864400>
+  worker_int: <function WorkerInt.worker_int at 0x7f718e864510>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f718e864620>
+  pre_exec: <function PreExec.pre_exec at 0x7f718e864730>
+  pre_request: <function PreRequest.pre_request at 0x7f718e864840>
+  post_request: <function PostRequest.post_request at 0x7f718e8648c8>
+  child_exit: <function ChildExit.child_exit at 0x7f718e8649d8>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f718e864ae8>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f718e864bf8>
+  on_exit: <function OnExit.on_exit at 0x7f718e864d08>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: /usr/local/src/ssl/ucmpcs.org.key
+  certfile: /usr/local/src/ssl/ucmpcs.org.crt
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-05-28 12:56:09 -0500] [17605] [INFO] Starting gunicorn 20.0.4
+[2020-05-28 12:56:09 -0500] [17605] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:56:09 -0500] [17605] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:56:09 -0500] [17605] [ERROR] Retrying in 1 second.
+[2020-05-28 12:56:10 -0500] [17605] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:56:10 -0500] [17605] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:56:10 -0500] [17605] [ERROR] Retrying in 1 second.
+[2020-05-28 12:56:11 -0500] [17605] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:56:11 -0500] [17605] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:56:11 -0500] [17605] [ERROR] Retrying in 1 second.
+[2020-05-28 12:56:12 -0500] [17605] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:56:12 -0500] [17605] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:56:12 -0500] [17605] [ERROR] Retrying in 1 second.
+[2020-05-28 12:56:13 -0500] [17605] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:56:13 -0500] [17605] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:56:13 -0500] [17605] [ERROR] Retrying in 1 second.
+[2020-05-28 12:56:14 -0500] [17605] [ERROR] Can't connect to ('0.0.0.0', 4433)
+[2020-05-28 12:56:28 -0500] [14974] [CRITICAL] WORKER TIMEOUT (pid:17581)
+[2020-05-28 12:56:28 -0500] [17581] [INFO] Worker exiting (pid: 17581)
+2020-05-28 12:56:28,372 INFO: Worker exiting (pid: 17581) 
+[2020-05-28 12:56:28 -0500] [17906] [INFO] Booting worker with pid: 17906
+[2020-05-28 12:56:51 -0500] [15535] [DEBUG] GET /annotate
+[2020-05-28 12:56:56 -0500] [17946] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:4433']
+  backlog: 2048
+  workers: 2
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/gas/web
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/gas/web/log/gas.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: gas:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f5ffdeffea0>
+  on_reload: <function OnReload.on_reload at 0x7f5ffdf16048>
+  when_ready: <function WhenReady.when_ready at 0x7f5ffdf16158>
+  pre_fork: <function Prefork.pre_fork at 0x7f5ffdf16268>
+  post_fork: <function Postfork.post_fork at 0x7f5ffdf16378>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f5ffdf16488>
+  worker_int: <function WorkerInt.worker_int at 0x7f5ffdf16598>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f5ffdf166a8>
+  pre_exec: <function PreExec.pre_exec at 0x7f5ffdf167b8>
+  pre_request: <function PreRequest.pre_request at 0x7f5ffdf168c8>
+  post_request: <function PostRequest.post_request at 0x7f5ffdf16950>
+  child_exit: <function ChildExit.child_exit at 0x7f5ffdf16a60>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f5ffdf16b70>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f5ffdf16c80>
+  on_exit: <function OnExit.on_exit at 0x7f5ffdf16d90>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: /usr/local/src/ssl/ucmpcs.org.key
+  certfile: /usr/local/src/ssl/ucmpcs.org.crt
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-05-28 12:56:56 -0500] [17946] [INFO] Starting gunicorn 20.0.4
+[2020-05-28 12:56:56 -0500] [17946] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:56:56 -0500] [17946] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:56:56 -0500] [17946] [ERROR] Retrying in 1 second.
+[2020-05-28 12:56:57 -0500] [17946] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:56:57 -0500] [17946] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:56:57 -0500] [17946] [ERROR] Retrying in 1 second.
+[2020-05-28 12:56:58 -0500] [17946] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:56:58 -0500] [17946] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:56:58 -0500] [17946] [ERROR] Retrying in 1 second.
+[2020-05-28 12:56:59 -0500] [17946] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:56:59 -0500] [17946] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:56:59 -0500] [17946] [ERROR] Retrying in 1 second.
+[2020-05-28 12:57:00 -0500] [17946] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:57:00 -0500] [17946] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:57:00 -0500] [17946] [ERROR] Retrying in 1 second.
+[2020-05-28 12:57:01 -0500] [17946] [ERROR] Can't connect to ('0.0.0.0', 4433)
+[2020-05-28 12:57:08 -0500] [17984] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:4433']
+  backlog: 2048
+  workers: 2
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/gas/web
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/gas/web/log/gas.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: gas:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f02d6259e18>
+  on_reload: <function OnReload.on_reload at 0x7f02d6259f28>
+  when_ready: <function WhenReady.when_ready at 0x7f02d62730d0>
+  pre_fork: <function Prefork.pre_fork at 0x7f02d62731e0>
+  post_fork: <function Postfork.post_fork at 0x7f02d62732f0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f02d6273400>
+  worker_int: <function WorkerInt.worker_int at 0x7f02d6273510>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f02d6273620>
+  pre_exec: <function PreExec.pre_exec at 0x7f02d6273730>
+  pre_request: <function PreRequest.pre_request at 0x7f02d6273840>
+  post_request: <function PostRequest.post_request at 0x7f02d62738c8>
+  child_exit: <function ChildExit.child_exit at 0x7f02d62739d8>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f02d6273ae8>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f02d6273bf8>
+  on_exit: <function OnExit.on_exit at 0x7f02d6273d08>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: /usr/local/src/ssl/ucmpcs.org.key
+  certfile: /usr/local/src/ssl/ucmpcs.org.crt
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-05-28 12:57:08 -0500] [17984] [INFO] Starting gunicorn 20.0.4
+[2020-05-28 12:57:08 -0500] [17984] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:57:08 -0500] [17984] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:57:08 -0500] [17984] [ERROR] Retrying in 1 second.
+[2020-05-28 12:57:09 -0500] [17984] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:57:09 -0500] [17984] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:57:09 -0500] [17984] [ERROR] Retrying in 1 second.
+[2020-05-28 12:57:10 -0500] [17984] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:57:10 -0500] [17984] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:57:10 -0500] [17984] [ERROR] Retrying in 1 second.
+[2020-05-28 12:57:11 -0500] [17984] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:57:11 -0500] [17984] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:57:11 -0500] [17984] [ERROR] Retrying in 1 second.
+[2020-05-28 12:57:12 -0500] [17984] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:57:12 -0500] [17984] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:57:12 -0500] [17984] [ERROR] Retrying in 1 second.
+[2020-05-28 12:57:13 -0500] [17984] [ERROR] Can't connect to ('0.0.0.0', 4433)
+[2020-05-28 12:57:16 -0500] [15535] [DEBUG] GET /annotate
+[2020-05-28 12:57:30 -0500] [17991] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:4433']
+  backlog: 2048
+  workers: 2
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/gas/web
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/gas/web/log/gas.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: gas:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7ff139dcfe18>
+  on_reload: <function OnReload.on_reload at 0x7ff139dcff28>
+  when_ready: <function WhenReady.when_ready at 0x7ff139de90d0>
+  pre_fork: <function Prefork.pre_fork at 0x7ff139de91e0>
+  post_fork: <function Postfork.post_fork at 0x7ff139de92f0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7ff139de9400>
+  worker_int: <function WorkerInt.worker_int at 0x7ff139de9510>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7ff139de9620>
+  pre_exec: <function PreExec.pre_exec at 0x7ff139de9730>
+  pre_request: <function PreRequest.pre_request at 0x7ff139de9840>
+  post_request: <function PostRequest.post_request at 0x7ff139de98c8>
+  child_exit: <function ChildExit.child_exit at 0x7ff139de99d8>
+  worker_exit: <function WorkerExit.worker_exit at 0x7ff139de9ae8>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7ff139de9bf8>
+  on_exit: <function OnExit.on_exit at 0x7ff139de9d08>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: /usr/local/src/ssl/ucmpcs.org.key
+  certfile: /usr/local/src/ssl/ucmpcs.org.crt
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-05-28 12:57:30 -0500] [17991] [INFO] Starting gunicorn 20.0.4
+[2020-05-28 12:57:30 -0500] [17991] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:57:30 -0500] [17991] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:57:30 -0500] [17991] [ERROR] Retrying in 1 second.
+[2020-05-28 12:57:31 -0500] [17991] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:57:31 -0500] [17991] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:57:31 -0500] [17991] [ERROR] Retrying in 1 second.
+[2020-05-28 12:57:32 -0500] [17991] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:57:32 -0500] [17991] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:57:32 -0500] [17991] [ERROR] Retrying in 1 second.
+[2020-05-28 12:57:33 -0500] [17991] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:57:33 -0500] [17991] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:57:33 -0500] [17991] [ERROR] Retrying in 1 second.
+[2020-05-28 12:57:34 -0500] [17991] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:57:34 -0500] [17991] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:57:34 -0500] [17991] [ERROR] Retrying in 1 second.
+[2020-05-28 12:57:35 -0500] [17991] [ERROR] Can't connect to ('0.0.0.0', 4433)
+[2020-05-28 12:57:55 -0500] [18007] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:4433']
+  backlog: 2048
+  workers: 2
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/gas/web
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/gas/web/log/gas.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: gas:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f38e8330e18>
+  on_reload: <function OnReload.on_reload at 0x7f38e8330f28>
+  when_ready: <function WhenReady.when_ready at 0x7f38e834a0d0>
+  pre_fork: <function Prefork.pre_fork at 0x7f38e834a1e0>
+  post_fork: <function Postfork.post_fork at 0x7f38e834a2f0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f38e834a400>
+  worker_int: <function WorkerInt.worker_int at 0x7f38e834a510>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f38e834a620>
+  pre_exec: <function PreExec.pre_exec at 0x7f38e834a730>
+  pre_request: <function PreRequest.pre_request at 0x7f38e834a840>
+  post_request: <function PostRequest.post_request at 0x7f38e834a8c8>
+  child_exit: <function ChildExit.child_exit at 0x7f38e834a9d8>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f38e834aae8>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f38e834abf8>
+  on_exit: <function OnExit.on_exit at 0x7f38e834ad08>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: /usr/local/src/ssl/ucmpcs.org.key
+  certfile: /usr/local/src/ssl/ucmpcs.org.crt
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-05-28 12:57:55 -0500] [18007] [INFO] Starting gunicorn 20.0.4
+[2020-05-28 12:57:55 -0500] [18007] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:57:55 -0500] [18007] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:57:55 -0500] [18007] [ERROR] Retrying in 1 second.
+[2020-05-28 12:57:56 -0500] [18007] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:57:56 -0500] [18007] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:57:56 -0500] [18007] [ERROR] Retrying in 1 second.
+[2020-05-28 12:57:57 -0500] [18007] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:57:57 -0500] [18007] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:57:57 -0500] [18007] [ERROR] Retrying in 1 second.
+[2020-05-28 12:57:58 -0500] [18007] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:57:58 -0500] [18007] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:57:58 -0500] [18007] [ERROR] Retrying in 1 second.
+[2020-05-28 12:57:59 -0500] [18007] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:57:59 -0500] [18007] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:57:59 -0500] [18007] [ERROR] Retrying in 1 second.
+[2020-05-28 12:58:00 -0500] [18007] [ERROR] Can't connect to ('0.0.0.0', 4433)
+[2020-05-28 12:58:16 -0500] [17906] [DEBUG] GET /annotate
+[2020-05-28 12:58:17 -0500] [15535] [DEBUG] GET /annotate
+[2020-05-28 12:58:26 -0500] [18015] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:4433']
+  backlog: 2048
+  workers: 2
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/gas/web
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/gas/web/log/gas.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: gas:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f9c380c6e18>
+  on_reload: <function OnReload.on_reload at 0x7f9c380c6f28>
+  when_ready: <function WhenReady.when_ready at 0x7f9c380e00d0>
+  pre_fork: <function Prefork.pre_fork at 0x7f9c380e01e0>
+  post_fork: <function Postfork.post_fork at 0x7f9c380e02f0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f9c380e0400>
+  worker_int: <function WorkerInt.worker_int at 0x7f9c380e0510>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f9c380e0620>
+  pre_exec: <function PreExec.pre_exec at 0x7f9c380e0730>
+  pre_request: <function PreRequest.pre_request at 0x7f9c380e0840>
+  post_request: <function PostRequest.post_request at 0x7f9c380e08c8>
+  child_exit: <function ChildExit.child_exit at 0x7f9c380e09d8>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f9c380e0ae8>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f9c380e0bf8>
+  on_exit: <function OnExit.on_exit at 0x7f9c380e0d08>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: /usr/local/src/ssl/ucmpcs.org.key
+  certfile: /usr/local/src/ssl/ucmpcs.org.crt
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-05-28 12:58:26 -0500] [18015] [INFO] Starting gunicorn 20.0.4
+[2020-05-28 12:58:26 -0500] [18015] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:58:26 -0500] [18015] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:58:26 -0500] [18015] [ERROR] Retrying in 1 second.
+[2020-05-28 12:58:27 -0500] [18015] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:58:27 -0500] [18015] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:58:27 -0500] [18015] [ERROR] Retrying in 1 second.
+[2020-05-28 12:58:28 -0500] [18015] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:58:28 -0500] [18015] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:58:28 -0500] [18015] [ERROR] Retrying in 1 second.
+[2020-05-28 12:58:29 -0500] [18015] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:58:29 -0500] [18015] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:58:29 -0500] [18015] [ERROR] Retrying in 1 second.
+[2020-05-28 12:58:30 -0500] [18015] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 12:58:30 -0500] [18015] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 12:58:30 -0500] [18015] [ERROR] Retrying in 1 second.
+[2020-05-28 12:58:31 -0500] [18015] [ERROR] Can't connect to ('0.0.0.0', 4433)
+[2020-05-28 12:58:44 -0500] [15535] [DEBUG] GET /annotate
+[2020-05-28 12:58:47 -0500] [15535] [DEBUG] GET /annotate
+[2020-05-28 12:58:50 -0500] [15535] [DEBUG] GET /annotate
+[2020-05-28 12:58:50 -0500] [15535] [DEBUG] GET /login
+[2020-05-28 12:58:50 -0500] [15535] [INFO] Login attempted from IP 12.26.17.91
+2020-05-28 12:58:50,807 INFO: Login attempted from IP 12.26.17.91 
+[2020-05-28 12:58:50 -0500] [15535] [DEBUG] GET /authcallback
+[2020-05-28 12:59:08 -0500] [15535] [DEBUG] GET /authcallback
+[2020-05-28 12:59:08 -0500] [15535] [INFO] Successful login by Tianda Liu (Globus identity: a6ffb8e7-58b9-4a76-8da8-fd63db9383c6)
+2020-05-28 12:59:08,828 INFO: Successful login by Tianda Liu (Globus identity: a6ffb8e7-58b9-4a76-8da8-fd63db9383c6) 
+[2020-05-28 12:59:08 -0500] [15535] [DEBUG] GET /annotate
+[2020-05-28 12:59:09 -0500] [15535] [DEBUG] GET /static/css/bootstrap.min.css
+[2020-05-28 12:59:09 -0500] [15535] [DEBUG] GET /static/css/style.css
+[2020-05-28 12:59:09 -0500] [15535] [DEBUG] GET /static/js/jquery.min.js
+[2020-05-28 12:59:09 -0500] [15535] [DEBUG] GET /static/js/bootstrap.min.js
+[2020-05-28 12:59:09 -0500] [15535] [DEBUG] GET /static/js/parsley.min.js
+[2020-05-28 12:59:09 -0500] [15535] [DEBUG] GET /static/img/menu-bg.jpg
+[2020-05-28 12:59:09 -0500] [15535] [DEBUG] GET /static/img/favicon.ico
+[2020-05-28 12:59:10 -0500] [15535] [DEBUG] GET /annotate
+[2020-05-28 12:59:11 -0500] [15535] [DEBUG] GET /
+[2020-05-28 12:59:11 -0500] [15535] [DEBUG] GET /static/img/home-bg.jpg
+[2020-05-28 12:59:11 -0500] [15535] [DEBUG] GET /
+[2020-05-28 12:59:17 -0500] [17906] [DEBUG] Closing connection. 
+[2020-05-28 12:59:31 -0500] [17906] [DEBUG] GET /annotate
+[2020-05-28 12:59:31 -0500] [15535] [DEBUG] GET /static/img/favicon.ico
+[2020-05-28 12:59:50 -0500] [17906] [DEBUG] GET /annotate
+[2020-05-28 12:59:50 -0500] [15535] [DEBUG] GET /static/img/favicon.ico
+[2020-05-28 13:00:55 -0500] [17906] [DEBUG] GET /annotate
+[2020-05-28 13:01:25 -0500] [14974] [CRITICAL] WORKER TIMEOUT (pid:15535)
+[2020-05-28 13:01:25 -0500] [15535] [INFO] Worker exiting (pid: 15535)
+2020-05-28 13:01:25,898 INFO: Worker exiting (pid: 15535) 
+[2020-05-28 13:01:25 -0500] [18032] [INFO] Booting worker with pid: 18032
+[2020-05-28 13:01:29 -0500] [18032] [DEBUG] GET /annotate/job
+[2020-05-28 13:02:00 -0500] [14974] [CRITICAL] WORKER TIMEOUT (pid:17906)
+[2020-05-28 13:02:00 -0500] [17906] [INFO] Worker exiting (pid: 17906)
+2020-05-28 13:02:00,076 INFO: Worker exiting (pid: 17906) 
+[2020-05-28 13:02:00 -0500] [18035] [INFO] Booting worker with pid: 18035
+[2020-05-28 13:03:47 -0500] [18035] [DEBUG] GET /annotations
+[2020-05-28 13:03:50 -0500] [18032] [DEBUG] GET /annotate
+[2020-05-28 13:03:58 -0500] [18035] [DEBUG] GET /profile
+[2020-05-28 13:04:04 -0500] [18032] [DEBUG] GET /annotations
+[2020-05-28 13:04:05 -0500] [18035] [DEBUG] GET /annotate
+[2020-05-28 13:04:36 -0500] [14974] [CRITICAL] WORKER TIMEOUT (pid:18032)
+[2020-05-28 13:04:36 -0500] [18032] [INFO] Worker exiting (pid: 18032)
+2020-05-28 13:04:36,427 INFO: Worker exiting (pid: 18032) 
+[2020-05-28 13:04:36 -0500] [18038] [INFO] Booting worker with pid: 18038
+[2020-05-28 13:07:10 -0500] [18035] [DEBUG] GET /
+[2020-05-28 13:07:10 -0500] [18038] [DEBUG] GET /static/img/home-bg.jpg
+[2020-05-28 13:08:59 -0500] [18035] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    **self.cfg.ssl_options)
+  File "/usr/lib/python3.6/ssl.py", line 1158, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.6/ssl.py", line 750, in __init__
+    self._context.load_cert_chain(certfile, keyfile)
+FileNotFoundError: [Errno 2] No such file or directory
+2020-05-28 13:08:59,144 ERROR: Socket error processing request. 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    **self.cfg.ssl_options)
+  File "/usr/lib/python3.6/ssl.py", line 1158, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.6/ssl.py", line 750, in __init__
+    self._context.load_cert_chain(certfile, keyfile)
+FileNotFoundError: [Errno 2] No such file or directory
+[2020-05-28 13:08:59 -0500] [18038] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    **self.cfg.ssl_options)
+  File "/usr/lib/python3.6/ssl.py", line 1158, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.6/ssl.py", line 750, in __init__
+    self._context.load_cert_chain(certfile, keyfile)
+FileNotFoundError: [Errno 2] No such file or directory
+2020-05-28 13:08:59,143 ERROR: Socket error processing request. 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    **self.cfg.ssl_options)
+  File "/usr/lib/python3.6/ssl.py", line 1158, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.6/ssl.py", line 750, in __init__
+    self._context.load_cert_chain(certfile, keyfile)
+FileNotFoundError: [Errno 2] No such file or directory
+[2020-05-28 13:08:59 -0500] [18035] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    **self.cfg.ssl_options)
+  File "/usr/lib/python3.6/ssl.py", line 1158, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.6/ssl.py", line 750, in __init__
+    self._context.load_cert_chain(certfile, keyfile)
+FileNotFoundError: [Errno 2] No such file or directory
+2020-05-28 13:08:59,395 ERROR: Socket error processing request. 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    **self.cfg.ssl_options)
+  File "/usr/lib/python3.6/ssl.py", line 1158, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.6/ssl.py", line 750, in __init__
+    self._context.load_cert_chain(certfile, keyfile)
+FileNotFoundError: [Errno 2] No such file or directory
+[2020-05-28 13:08:59 -0500] [18035] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    **self.cfg.ssl_options)
+  File "/usr/lib/python3.6/ssl.py", line 1158, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.6/ssl.py", line 750, in __init__
+    self._context.load_cert_chain(certfile, keyfile)
+FileNotFoundError: [Errno 2] No such file or directory
+2020-05-28 13:08:59,396 ERROR: Socket error processing request. 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    **self.cfg.ssl_options)
+  File "/usr/lib/python3.6/ssl.py", line 1158, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.6/ssl.py", line 750, in __init__
+    self._context.load_cert_chain(certfile, keyfile)
+FileNotFoundError: [Errno 2] No such file or directory
+[2020-05-28 13:09:01 -0500] [18038] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    **self.cfg.ssl_options)
+  File "/usr/lib/python3.6/ssl.py", line 1158, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.6/ssl.py", line 750, in __init__
+    self._context.load_cert_chain(certfile, keyfile)
+FileNotFoundError: [Errno 2] No such file or directory
+2020-05-28 13:09:01,109 ERROR: Socket error processing request. 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    **self.cfg.ssl_options)
+  File "/usr/lib/python3.6/ssl.py", line 1158, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.6/ssl.py", line 750, in __init__
+    self._context.load_cert_chain(certfile, keyfile)
+FileNotFoundError: [Errno 2] No such file or directory
+[2020-05-28 13:09:01 -0500] [18038] [ERROR] Socket error processing request.
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    **self.cfg.ssl_options)
+  File "/usr/lib/python3.6/ssl.py", line 1158, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.6/ssl.py", line 750, in __init__
+    self._context.load_cert_chain(certfile, keyfile)
+FileNotFoundError: [Errno 2] No such file or directory
+2020-05-28 13:09:01,113 ERROR: Socket error processing request. 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 130, in handle
+    **self.cfg.ssl_options)
+  File "/usr/lib/python3.6/ssl.py", line 1158, in wrap_socket
+    ciphers=ciphers)
+  File "/usr/lib/python3.6/ssl.py", line 750, in __init__
+    self._context.load_cert_chain(certfile, keyfile)
+FileNotFoundError: [Errno 2] No such file or directory
+[2020-05-28 13:09:06 -0500] [18035] [DEBUG] GET /
+[2020-05-28 13:09:07 -0500] [18038] [DEBUG] GET /static/img/favicon.ico
+[2020-05-28 13:09:17 -0500] [18038] [DEBUG] GET /annotate
+[2020-05-28 13:09:23 -0500] [18035] [DEBUG] GET /hello
+[2020-05-28 13:09:53 -0500] [14974] [CRITICAL] WORKER TIMEOUT (pid:18038)
+[2020-05-28 13:09:53 -0500] [18038] [INFO] Worker exiting (pid: 18038)
+2020-05-28 13:09:53,980 INFO: Worker exiting (pid: 18038) 
+[2020-05-28 13:09:54 -0500] [18795] [INFO] Booting worker with pid: 18795
+[2020-05-28 13:10:04 -0500] [18795] [DEBUG] GET /hello
+[2020-05-28 13:10:04 -0500] [18035] [DEBUG] GET /static/img/favicon.ico
+[2020-05-28 13:10:06 -0500] [18795] [DEBUG] GET /hello
+[2020-05-28 13:10:06 -0500] [18035] [DEBUG] GET /static/img/favicon.ico
+[2020-05-28 13:10:08 -0500] [18795] [DEBUG] GET /hello
+[2020-05-28 13:10:08 -0500] [18035] [DEBUG] GET /static/img/favicon.ico
+[2020-05-28 13:10:12 -0500] [18803] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:4433']
+  backlog: 2048
+  workers: 2
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/gas/web
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/gas/web/log/gas.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: gas:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fed630e8e18>
+  on_reload: <function OnReload.on_reload at 0x7fed630e8f28>
+  when_ready: <function WhenReady.when_ready at 0x7fed631020d0>
+  pre_fork: <function Prefork.pre_fork at 0x7fed631021e0>
+  post_fork: <function Postfork.post_fork at 0x7fed631022f0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fed63102400>
+  worker_int: <function WorkerInt.worker_int at 0x7fed63102510>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fed63102620>
+  pre_exec: <function PreExec.pre_exec at 0x7fed63102730>
+  pre_request: <function PreRequest.pre_request at 0x7fed63102840>
+  post_request: <function PostRequest.post_request at 0x7fed631028c8>
+  child_exit: <function ChildExit.child_exit at 0x7fed631029d8>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fed63102ae8>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fed63102bf8>
+  on_exit: <function OnExit.on_exit at 0x7fed63102d08>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: /usr/local/src/ssl/ucmpcs.org.key
+  certfile: /usr/local/src/ssl/ucmpcs.org.crt
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-05-28 13:10:12 -0500] [18803] [INFO] Starting gunicorn 20.0.4
+[2020-05-28 13:10:12 -0500] [18803] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 13:10:12 -0500] [18803] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 13:10:12 -0500] [18803] [ERROR] Retrying in 1 second.
+[2020-05-28 13:10:13 -0500] [18803] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 13:10:13 -0500] [18803] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 13:10:13 -0500] [18803] [ERROR] Retrying in 1 second.
+[2020-05-28 13:10:14 -0500] [18803] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 13:10:14 -0500] [18803] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 13:10:14 -0500] [18803] [ERROR] Retrying in 1 second.
+[2020-05-28 13:10:15 -0500] [18803] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 13:10:15 -0500] [18803] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 13:10:15 -0500] [18803] [ERROR] Retrying in 1 second.
+[2020-05-28 13:10:15 -0500] [18035] [DEBUG] GET /hello
+[2020-05-28 13:10:16 -0500] [18795] [DEBUG] GET /static/img/favicon.ico
+[2020-05-28 13:10:16 -0500] [18803] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-05-28 13:10:16 -0500] [18803] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-05-28 13:10:16 -0500] [18803] [ERROR] Retrying in 1 second.
+[2020-05-28 13:10:17 -0500] [18803] [ERROR] Can't connect to ('0.0.0.0', 4433)
+[2020-05-28 13:10:18 -0500] [18795] [DEBUG] GET /hello
+[2020-05-28 13:10:19 -0500] [18035] [DEBUG] GET /static/img/favicon.ico
+[2020-05-28 13:10:20 -0500] [18795] [DEBUG] GET /hello
+[2020-05-28 13:10:29 -0500] [18035] [DEBUG] GET /hello
+[2020-05-28 13:10:29 -0500] [18795] [DEBUG] GET /static/img/favicon.ico
+[2020-05-28 16:57:43 -0500] [14974] [INFO] Handling signal: term
+[2020-05-28 16:57:43 -0500] [18035] [INFO] Worker exiting (pid: 18035)
+2020-05-28 16:57:43,101 INFO: Worker exiting (pid: 18035) 
+[2020-05-28 16:57:43 -0500] [18795] [INFO] Worker exiting (pid: 18795)
+2020-05-28 16:57:43,106 INFO: Worker exiting (pid: 18795) 
+[2020-05-28 16:57:43 -0500] [14974] [INFO] Shutting down: Master
+2020-05-28 16:58:54,606 INFO: Worker exiting (pid: 19002) 
+2020-05-28 16:58:54,610 INFO: Worker exiting (pid: 19004) 
+2020-05-28 16:59:08,263 INFO: Worker exiting (pid: 19017) 
+2020-05-28 16:59:08,262 INFO: Worker exiting (pid: 19015) 
+2020-05-28 17:37:08,859 INFO: Worker exiting (pid: 19049) 
+2020-05-28 17:37:08,859 INFO: Worker exiting (pid: 19048) 
+[2020-05-28 17:57:24 -0500] [19448] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:4433']
+  backlog: 2048
+  workers: 2
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/gas/web
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/gas/web/log/gas.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: gas:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f8c837aee18>
+  on_reload: <function OnReload.on_reload at 0x7f8c837aef28>
+  when_ready: <function WhenReady.when_ready at 0x7f8c837c80d0>
+  pre_fork: <function Prefork.pre_fork at 0x7f8c837c81e0>
+  post_fork: <function Postfork.post_fork at 0x7f8c837c82f0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f8c837c8400>
+  worker_int: <function WorkerInt.worker_int at 0x7f8c837c8510>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f8c837c8620>
+  pre_exec: <function PreExec.pre_exec at 0x7f8c837c8730>
+  pre_request: <function PreRequest.pre_request at 0x7f8c837c8840>
+  post_request: <function PostRequest.post_request at 0x7f8c837c88c8>
+  child_exit: <function ChildExit.child_exit at 0x7f8c837c89d8>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f8c837c8ae8>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f8c837c8bf8>
+  on_exit: <function OnExit.on_exit at 0x7f8c837c8d08>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: /usr/local/src/ssl/ucmpcs.org.key
+  certfile: /usr/local/src/ssl/ucmpcs.org.crt
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-05-28 17:57:24 -0500] [19448] [INFO] Starting gunicorn 20.0.4
+[2020-05-28 17:57:24 -0500] [19448] [DEBUG] Arbiter booted
+[2020-05-28 17:57:24 -0500] [19448] [INFO] Listening at: https://0.0.0.0:4433 (19448)
+[2020-05-28 17:57:24 -0500] [19448] [INFO] Using worker: sync
+[2020-05-28 17:57:24 -0500] [19451] [INFO] Booting worker with pid: 19451
+[2020-05-28 17:57:24 -0500] [19452] [INFO] Booting worker with pid: 19452
+[2020-05-28 17:57:24 -0500] [19448] [DEBUG] 2 workers
+[2020-05-28 17:57:43 -0500] [19452] [DEBUG] GET /annotate
+[2020-05-28 17:57:44 -0500] [19451] [DEBUG] GET /annotate
+[2020-05-28 17:57:48 -0500] [19452] [DEBUG] GET /annotate/job
+[2020-05-28 18:05:08 -0500] [19448] [INFO] Handling signal: int
+[2020-05-28 18:05:08 -0500] [19452] [INFO] Worker exiting (pid: 19452)
+[2020-05-28 18:05:08 -0500] [19451] [INFO] Worker exiting (pid: 19451)
+2020-05-28 18:05:08,470 INFO: Worker exiting (pid: 19451) 
+2020-05-28 18:05:08,470 INFO: Worker exiting (pid: 19452) 
+[2020-05-28 18:05:08 -0500] [19448] [INFO] Shutting down: Master
+2020-05-28 22:10:49,302 INFO: Worker exiting (pid: 20595) 
+2020-05-28 22:10:49,302 INFO: Worker exiting (pid: 20597) 
+2020-05-28 22:12:16,372 INFO: Worker exiting (pid: 20791) 
+2020-05-28 22:13:49,591 INFO: Worker exiting (pid: 20807) 
+2020-05-28 22:16:33,879 INFO: Worker exiting (pid: 20839) 
+2020-05-28 23:14:45,142 INFO: Worker exiting (pid: 20793) 
+2020-05-28 23:14:45,141 INFO: Worker exiting (pid: 20878) 
+2020-05-28 23:33:02,140 INFO: Worker exiting (pid: 21575) 
+2020-05-28 23:38:11,648 INFO: Worker exiting (pid: 21573) 
+2020-05-28 23:40:11,909 INFO: Worker exiting (pid: 21594) 
+2020-05-28 23:42:10,141 INFO: Worker exiting (pid: 21598) 
+2020-05-28 23:42:32,147 INFO: Worker exiting (pid: 21601) 
+2020-06-04 19:41:18,098 INFO: Login attempted from IP 12.26.17.91 
+2020-06-04 19:41:19,179 INFO: Successful login by Tianda Liu (Globus identity: a6ffb8e7-58b9-4a76-8da8-fd63db9383c6) 
+2020-06-04 19:43:55,995 INFO: Worker exiting (pid: 7588) 
+2020-06-04 19:44:56,181 INFO: Worker exiting (pid: 7601) 
+2020-06-04 21:40:31,001 INFO: Worker exiting (pid: 7587) 
+2020-06-04 21:40:31,000 INFO: Worker exiting (pid: 7604) 
+2020-06-04 21:59:56,807 ERROR: Exception on /annotations/3c989cb6-3e04-4b40-9918-f152f7a2113b [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-06-04 22:00:12,369 INFO: Worker exiting (pid: 7859) 
+[2020-06-04 22:57:29 -0500] [7992] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:4433']
+  backlog: 2048
+  workers: 2
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/gas/web
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/gas/web/log/gas.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: gas:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fcae2708e18>
+  on_reload: <function OnReload.on_reload at 0x7fcae2708f28>
+  when_ready: <function WhenReady.when_ready at 0x7fcae27220d0>
+  pre_fork: <function Prefork.pre_fork at 0x7fcae27221e0>
+  post_fork: <function Postfork.post_fork at 0x7fcae27222f0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fcae2722400>
+  worker_int: <function WorkerInt.worker_int at 0x7fcae2722510>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fcae2722620>
+  pre_exec: <function PreExec.pre_exec at 0x7fcae2722730>
+  pre_request: <function PreRequest.pre_request at 0x7fcae2722840>
+  post_request: <function PostRequest.post_request at 0x7fcae27228c8>
+  child_exit: <function ChildExit.child_exit at 0x7fcae27229d8>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fcae2722ae8>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fcae2722bf8>
+  on_exit: <function OnExit.on_exit at 0x7fcae2722d08>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: /usr/local/src/ssl/ucmpcs.org.key
+  certfile: /usr/local/src/ssl/ucmpcs.org.crt
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-06-04 22:57:29 -0500] [7992] [INFO] Starting gunicorn 20.0.4
+[2020-06-04 22:57:29 -0500] [7992] [DEBUG] Arbiter booted
+[2020-06-04 22:57:29 -0500] [7992] [INFO] Listening at: https://0.0.0.0:4433 (7992)
+[2020-06-04 22:57:29 -0500] [7992] [INFO] Using worker: sync
+[2020-06-04 22:57:29 -0500] [7995] [INFO] Booting worker with pid: 7995
+[2020-06-04 22:57:29 -0500] [7997] [INFO] Booting worker with pid: 7997
+[2020-06-04 22:57:29 -0500] [7992] [DEBUG] 2 workers
+[2020-06-04 22:57:31 -0500] [7992] [INFO] Handling signal: int
+[2020-06-04 22:57:31 -0500] [7995] [INFO] Worker exiting (pid: 7995)
+2020-06-04 22:57:31,314 INFO: Worker exiting (pid: 7995) 
+[2020-06-04 22:57:31 -0500] [7992] [INFO] Shutting down: Master
+2020-06-04 22:58:29,701 INFO: Worker exiting (pid: 8005) 
+2020-06-04 22:58:29,701 INFO: Worker exiting (pid: 8007) 
+2020-06-04 22:58:51,917 ERROR: Exception on /annotations/3c989cb6-3e04-4b40-9918-f152f7a2113 [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/web/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/web/views.py", line 247, in annotation_details
+    annotation = response['Items'][0]
+IndexError: list index out of range
+2020-06-04 22:59:44,805 INFO: Worker exiting (pid: 8024) 
+2020-06-04 22:59:44,806 INFO: Worker exiting (pid: 8023) 
+2020-06-04 23:24:25,110 INFO: Worker exiting (pid: 8092) 
+2020-06-04 23:25:07,291 INFO: Worker exiting (pid: 8134) 
+2020-06-04 23:38:36,335 ERROR: Exception on /annotations/15980e57-0993-4bb2-bfae-66904efb413d/log [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1967, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 2097, in make_response
+    "The view function did not return a valid response. The"
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-06-04 23:40:59,726 INFO: Worker exiting (pid: 8090) 
+2020-06-04 23:40:59,725 INFO: Worker exiting (pid: 8137) 
+2020-06-04 23:43:28,936 INFO: Worker exiting (pid: 8254) 
+2020-06-04 23:43:28,935 INFO: Worker exiting (pid: 8255) 
+2020-06-04 23:57:21,329 INFO: Worker exiting (pid: 8306) 
+2020-06-04 23:57:21,329 INFO: Worker exiting (pid: 8308) 
+2020-06-04 23:57:22,912 ERROR: Exception in worker process 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ubuntu/gas/web/gas.py", line 73, in <module>
+    import views
+  File "/home/ubuntu/gas/web/views.py", line 258
+    if not
+          ^
+SyntaxError: invalid syntax
+2020-06-04 23:57:22,920 INFO: Worker exiting (pid: 8398) 
+2020-06-04 23:57:22,936 ERROR: Exception in worker process 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ubuntu/gas/web/gas.py", line 73, in <module>
+    import views
+  File "/home/ubuntu/gas/web/views.py", line 258
+    if not
+          ^
+SyntaxError: invalid syntax
+2020-06-04 23:57:22,944 INFO: Worker exiting (pid: 8399) 
+2020-06-04 23:57:44,746 ERROR: Exception in worker process 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ubuntu/gas/web/gas.py", line 73, in <module>
+    import views
+  File "/home/ubuntu/gas/web/views.py", line 258
+    if not
+          ^
+SyntaxError: invalid syntax
+2020-06-04 23:57:44,752 INFO: Worker exiting (pid: 8422) 
+2020-06-04 23:57:44,793 ERROR: Exception in worker process 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 119, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 144, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 49, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 39, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 358, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ubuntu/gas/web/gas.py", line 73, in <module>
+    import views
+  File "/home/ubuntu/gas/web/views.py", line 258
+    if not
+          ^
+SyntaxError: invalid syntax
+2020-06-04 23:57:44,801 INFO: Worker exiting (pid: 8423) 
+2020-06-05 02:14:08,970 INFO: Worker exiting (pid: 8604) 
+2020-06-05 02:14:09,403 INFO: Worker exiting (pid: 8606) 
+2020-06-05 14:11:58,105 INFO: Worker exiting (pid: 8607) 
+2020-06-05 14:11:58,106 INFO: Worker exiting (pid: 8608) 
+2020-06-05 14:16:55,246 INFO: Worker exiting (pid: 9827) 
+2020-06-05 14:16:55,247 INFO: Worker exiting (pid: 9828) 
+2020-06-05 14:23:35,213 ERROR: Exception on /annotations/3c989cb6-3e04-4b40-9918-f152f7a2113b/log [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/web/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/web/views.py", line 335, in annotation_log
+    return render_template('view_log.html', jon_id=job_id, log_file_contents=log_file_contents)
+NameError: name 'job_id' is not defined
+2020-06-05 14:23:44,377 INFO: Worker exiting (pid: 10127) 
+2020-06-05 14:24:32,696 INFO: Worker exiting (pid: 10147) 
+2020-06-05 15:51:42,652 INFO: Worker exiting (pid: 10171) 
+2020-06-05 15:51:42,651 INFO: Worker exiting (pid: 10173) 
+2020-06-05 19:14:49,994 INFO: Worker exiting (pid: 10771) 
+2020-06-05 19:14:49,994 INFO: Worker exiting (pid: 10769) 
+2020-06-05 22:44:55,564 ERROR: Exception on /annotations/3c989cb6-3e04-4b40-9918-f152f7a2113b/log [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/gas/web/views.py", line 330, in annotation_log
+    log_file_contents = result_file['Body'].read().decode()
+NameError: name 'result_file' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/web/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/web/views.py", line 333, in annotation_log
+    except botocore.exceptions.ClientError as e:
+NameError: name 'botocore' is not defined
+2020-06-05 22:45:20,509 ERROR: Exception on /annotations/3c989cb6-3e04-4b40-9918-f152f7a2113b/log [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/gas/web/views.py", line 330, in annotation_log
+    log_file_contents = log_file['Body'].read().decode()
+NameError: name 'result_file' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/web/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/web/views.py", line 333, in annotation_log
+    except botocore.exceptions.ClientError as e:
+NameError: name 'botocore' is not defined
+2020-06-05 22:45:23,512 INFO: Worker exiting (pid: 11647) 
+2020-06-05 22:45:53,632 INFO: Worker exiting (pid: 11662) 
+2020-06-05 22:45:53,631 INFO: Worker exiting (pid: 11663) 
+2020-06-05 22:48:50,735 INFO: Worker exiting (pid: 11690) 
+2020-06-05 22:48:50,734 INFO: Worker exiting (pid: 11689) 
+2020-06-05 23:48:20,221 INFO: Worker exiting (pid: 11746) 
+2020-06-05 23:48:20,220 INFO: Worker exiting (pid: 11748) 
+2020-06-05 23:59:17,373 INFO: Worker exiting (pid: 11849) 
+2020-06-06 00:07:47,425 INFO: Worker exiting (pid: 11850) 
+2020-06-06 00:07:47,425 INFO: Worker exiting (pid: 11855) 
+2020-06-06 10:43:07,367 INFO: Worker exiting (pid: 12952) 
+2020-06-06 10:43:07,468 INFO: Worker exiting (pid: 12951) 
+2020-06-06 10:43:50,736 ERROR: Exception on /annotations/3c989cb6-3e04-4b40-9918-f152f7a2113b [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/web/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/web/views.py", line 289, in annotation_details
+    if annotation['archived'] == True:
+KeyError: 'archived'
+2020-06-06 10:43:55,135 ERROR: Exception on /annotations/3721df8f-7f81-49e8-a5b6-bb1f642c8f7c [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/web/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/web/views.py", line 289, in annotation_details
+    if annotation['archived'] == True:
+KeyError: 'archived'
+2020-06-06 10:43:59,219 ERROR: Exception on /annotations/15980e57-0993-4bb2-bfae-66904efb413d [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/web/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/web/views.py", line 289, in annotation_details
+    if annotation['archived'] == True:
+KeyError: 'archived'
+2020-06-06 10:45:43,146 INFO: Worker exiting (pid: 13053) 
+2020-06-06 10:45:43,147 INFO: Worker exiting (pid: 13052) 
+2020-06-06 10:46:18,165 ERROR: Exception on /annotations/3c989cb6-3e04-4b40-9918-f152f7a2113b [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/web/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/web/views.py", line 286, in annotation_details
+    if annotation['archived'] == True:
+KeyError: 'archived'
+2020-06-06 10:46:43,125 INFO: Worker exiting (pid: 13083) 
+2020-06-06 16:03:43,210 INFO: Worker exiting (pid: 13085) 
+2020-06-06 16:03:43,209 INFO: Worker exiting (pid: 13093) 
+2020-06-06 16:22:52,552 INFO: Worker exiting (pid: 13453) 
+2020-06-06 16:22:52,551 INFO: Worker exiting (pid: 13451) 
+2020-06-06 16:24:05,257 INFO: Worker exiting (pid: 13506) 
+2020-06-06 16:24:05,256 INFO: Worker exiting (pid: 13505) 
+2020-06-06 17:21:19,883 INFO: Worker exiting (pid: 13533) 
+2020-06-06 17:21:19,884 INFO: Worker exiting (pid: 13531) 
+2020-06-06 17:24:11,797 INFO: Worker exiting (pid: 14069) 
+2020-06-06 17:24:11,796 INFO: Worker exiting (pid: 14068) 
+2020-06-06 20:44:38,471 INFO: Worker exiting (pid: 14274) 
+2020-06-06 23:12:48,346 INFO: Worker exiting (pid: 14279) 
+2020-06-06 23:14:42,647 INFO: Worker exiting (pid: 14419) 
+2020-06-06 23:25:56,431 INFO: Worker exiting (pid: 14273) 
+2020-06-06 23:25:56,430 INFO: Worker exiting (pid: 14424) 
+2020-06-06 23:29:34,746 INFO: Worker exiting (pid: 14477) 
+2020-06-06 23:32:41,111 INFO: Worker exiting (pid: 14475) 
+2020-06-06 23:49:34,579 INFO: Worker exiting (pid: 14482) 
+2020-06-06 23:49:34,579 INFO: Worker exiting (pid: 14485) 
+2020-06-07 12:27:10,169 INFO: Worker exiting (pid: 15922) 
+2020-06-07 12:27:11,282 INFO: Worker exiting (pid: 15915) 
+2020-06-07 12:27:41,479 INFO: Worker exiting (pid: 15927) 
+2020-06-07 12:27:42,616 INFO: Worker exiting (pid: 15930) 
+2020-06-07 15:37:01,953 INFO: Worker exiting (pid: 15933) 
+2020-06-07 15:37:01,952 INFO: Worker exiting (pid: 15936) 
+2020-06-07 23:40:57,575 INFO: Worker exiting (pid: 17544) 
+2020-06-08 01:53:18,950 INFO: Worker exiting (pid: 17823) 
+2020-06-08 01:53:19,089 INFO: Worker exiting (pid: 17824) 
+[2020-06-08 12:02:59 -0500] [18890] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:4433']
+  backlog: 2048
+  workers: 2
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/ubuntu/gas/web
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/gas/web/log/gas.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: gas:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f7671098e18>
+  on_reload: <function OnReload.on_reload at 0x7f7671098f28>
+  when_ready: <function WhenReady.when_ready at 0x7f76710b20d0>
+  pre_fork: <function Prefork.pre_fork at 0x7f76710b21e0>
+  post_fork: <function Postfork.post_fork at 0x7f76710b22f0>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f76710b2400>
+  worker_int: <function WorkerInt.worker_int at 0x7f76710b2510>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f76710b2620>
+  pre_exec: <function PreExec.pre_exec at 0x7f76710b2730>
+  pre_request: <function PreRequest.pre_request at 0x7f76710b2840>
+  post_request: <function PostRequest.post_request at 0x7f76710b28c8>
+  child_exit: <function ChildExit.child_exit at 0x7f76710b29d8>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f76710b2ae8>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f76710b2bf8>
+  on_exit: <function OnExit.on_exit at 0x7f76710b2d08>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: /usr/local/src/ssl/ucmpcs.org.key
+  certfile: /usr/local/src/ssl/ucmpcs.org.crt
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-06-08 12:02:59 -0500] [18890] [INFO] Starting gunicorn 20.0.4
+[2020-06-08 12:02:59 -0500] [18890] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-06-08 12:02:59 -0500] [18890] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-06-08 12:02:59 -0500] [18890] [ERROR] Retrying in 1 second.
+[2020-06-08 12:03:00 -0500] [18890] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-06-08 12:03:00 -0500] [18890] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-06-08 12:03:00 -0500] [18890] [ERROR] Retrying in 1 second.
+[2020-06-08 12:03:01 -0500] [18890] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-06-08 12:03:01 -0500] [18890] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-06-08 12:03:01 -0500] [18890] [ERROR] Retrying in 1 second.
+[2020-06-08 12:03:02 -0500] [18890] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-06-08 12:03:02 -0500] [18890] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-06-08 12:03:02 -0500] [18890] [ERROR] Retrying in 1 second.
+[2020-06-08 12:03:03 -0500] [18890] [ERROR] Connection in use: ('0.0.0.0', 4433)
+[2020-06-08 12:03:03 -0500] [18890] [DEBUG] connection to ('0.0.0.0', 4433) failed: [Errno 98] Address already in use
+[2020-06-08 12:03:03 -0500] [18890] [ERROR] Retrying in 1 second.
+[2020-06-08 12:03:04 -0500] [18890] [ERROR] Can't connect to ('0.0.0.0', 4433)
+2020-06-08 12:03:33,441 INFO: Worker exiting (pid: 17825) 
+2020-06-08 12:03:33,446 INFO: Worker exiting (pid: 17826) 
+2020-06-08 20:06:52,970 INFO: Worker exiting (pid: 19938) 
+2020-06-08 20:06:52,970 INFO: Worker exiting (pid: 19939) 
+2020-06-08 20:29:11,650 ERROR: Socket error processing request. 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/http/message.py", line 186, in __init__
+    super().__init__(cfg, unreader)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/http/message.py", line 53, in __init__
+    unused = self.parse(self.unreader)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/http/message.py", line 198, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/http/message.py", line 189, in get_data
+    data = unreader.read()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/http/unreader.py", line 37, in read
+    d = self.chunk()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/http/unreader.py", line 64, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/usr/lib/python3.6/ssl.py", line 997, in recv
+    return self.read(buflen)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 633, in read
+    v = self._sslobj.read(len)
+OSError: [Errno 0] Error
+2020-06-08 20:29:11,998 ERROR: Socket error processing request. 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/sync.py", line 133, in handle
+    req = next(parser)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/http/parser.py", line 41, in __next__
+    self.mesg = self.mesg_class(self.cfg, self.unreader, self.req_count)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/http/message.py", line 186, in __init__
+    super().__init__(cfg, unreader)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/http/message.py", line 53, in __init__
+    unused = self.parse(self.unreader)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/http/message.py", line 198, in parse
+    self.get_data(unreader, buf, stop=True)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/http/message.py", line 189, in get_data
+    data = unreader.read()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/http/unreader.py", line 37, in read
+    d = self.chunk()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/http/unreader.py", line 64, in chunk
+    return self.sock.recv(self.mxchunk)
+  File "/usr/lib/python3.6/ssl.py", line 997, in recv
+    return self.read(buflen)
+  File "/usr/lib/python3.6/ssl.py", line 874, in read
+    return self._sslobj.read(len, buffer)
+  File "/usr/lib/python3.6/ssl.py", line 633, in read
+    v = self._sslobj.read(len)
+OSError: [Errno 0] Error
+2020-06-08 20:29:25,535 INFO: Login attempted from IP 38.106.150.247 
+2020-06-08 20:29:55,551 INFO: Worker exiting (pid: 20016) 
+2020-06-08 20:29:55,554 INFO: Worker exiting (pid: 20015) 
+2020-06-09 01:05:04,747 INFO: Worker exiting (pid: 20805) 
+2020-06-09 01:05:54,947 INFO: Worker exiting (pid: 20803) 
+2020-06-09 01:11:55,990 INFO: Worker exiting (pid: 20818) 
+2020-06-09 01:11:55,989 INFO: Worker exiting (pid: 20821) 
